@@ -21,7 +21,24 @@ app.use('/species', speciesRouter);
 app.use('/individuals', individualsRouter);
 app.use('/sightings', sightingsRouter);
 
+//got this post working, moving it back to species now
+// app.post('/api/species', async (req, res) => {
+//   const newSpecies = {
+//     common_name: req.body.common_name,
+//     scientific_name: req.body.scientific_name,
+//     population: req.body.population,
+//     conservation_status: req.body.conservation_status,
+//     created_on: req.body.created_on,
 
+//   };
+//   console.log([newSpecies.common_name, newSpecies.scientific_name]);
+//   const result = await db.query(
+//     'INSERT INTO species(common_name, scientific_name, population, conservation_status, created_on) VALUES($1, $2, $3, $4, $5) RETURNING *',
+//     [newSpecies.common_name, newSpecies.scientific_name, newSpecies.population, newSpecies.conservation_status, newSpecies.created_on ],
+//   );
+//   console.log(result[0]);
+//   res.json(result[0]);
+// });
 
 // router.get("/", function (req, res) {
 //   res.send("Hello");
