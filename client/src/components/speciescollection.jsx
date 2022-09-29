@@ -9,7 +9,7 @@ const SpeciesCollection = () => {
 //   }, {
 //     commonName: 'Gold FIsh', 
 //     scientificName: 'Panthera pardus'
-//   }, {
+//   }, 
 //     commonName: 'House Cat', 
 //     scientificName: 'Panthera pardus'
 //   }, {
