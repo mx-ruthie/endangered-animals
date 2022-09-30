@@ -9,7 +9,7 @@ const SpeciesCollection = () => {
 //   }, {
 //     commonName: 'Gold FIsh', 
 //     scientificName: 'Panthera pardus'
-//   }, {
+//   }, 
 //     commonName: 'House Cat', 
 //     scientificName: 'Panthera pardus'
 //   }, {
@@ -50,11 +50,9 @@ export default SpeciesCollection;
 
 const SpeciesCard = ({species}) => {
   return <div className='card'>
-    Common Name: {species.common_name}
-    Scientific Name: {species.scientific_name}
-    Estimated Population: 500
-    Conservation Status: CE
-    Number of individuals recorded: 10
-    Number of sightings of individuals: 30
+    Common Name: <br></br>{species.common_name}<br></br>
+    Scientific Name: <br></br>{species.scientific_name}<br></br>
+    Estimated Population: {species.population}<br></br>
+    Conservation Status: {species.conservation_status}<br></br>
   </div>
 }
