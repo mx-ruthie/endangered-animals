@@ -8,6 +8,7 @@ function App() {
   const [displayTable, setDisplayTable] = useState(false);
 
   const handleSubmit = () => {
+    // https://bobbyhadz.com/blog/react-toggle-boolean-state
     setDisplayTable(currentDisplay => !currentDisplay);
     console.log("are you working?");
   };
@@ -16,8 +17,11 @@ function App() {
       <h1>Endangered Species</h1>
       <SpeciesCollection />
       {/* the displayTable line is here to check the state of the page */}
-      {displayTable.toString()}
+      {/* {displayTable.toString()} */}
+      {/* adding bootstrap to my app https://create-react-app.dev/docs/adding-bootstrap/
+      this is what I referenced to get the table view setup from bootsrap https://getbootstrap.com/docs/4.0/content/tables/ */}
       <button onClick={handleSubmit}>Click here for all individual sightings data</button>
+      {/* https://www.mohammedasker.com/how-to-show-or-hide-element-in-react */}
       {displayTable ? <table className="table table-dark">
   <thead>
     <tr>
